@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.down{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.downn{
+    position: absolute;
+    top: -315px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.down:hover .downn{
+    top: 15px;
+}
+i{
+    font-size: 30px;
+    color: #000;
+    margin: 12px 0;
+}
+.down:hover i{
+    animation-name: down;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes down{
+    0%{
+        color: aqua;
+        font-size: 30px;
+    }
+    25%{
+        color: blueviolet;
+        font-size: 28px;
+    }
+    50%{
+        color: darkorange;
+        font-size: 26px;
+    }
+    75%{
+        color: darkred;
+        font-size: 28px;
+    }
+    100%{
+        color: lawngreen;
+        font-size: 30px;
+    }
+}
